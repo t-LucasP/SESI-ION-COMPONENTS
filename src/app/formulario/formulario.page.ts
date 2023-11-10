@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formulario.page.scss'],
 })
 export class FormularioPage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
   }
 
+  ngOnInit() {}
+
+  public showOthersInput(event: any): void {
+    const otherOptionsInput = document.querySelector(".other-options-input");
+
+    if(event.detail.value == 2) {
+      otherOptionsInput?.setAttribute("style", "display: block;")
+    } else {
+      otherOptionsInput?.setAttribute("style", "display: none;")
+    }
+  }
 }
