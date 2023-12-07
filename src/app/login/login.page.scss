@@ -1,15 +1,27 @@
-ion-content::part(background) {
-    background: url("../../assets/images/grupo.svg") no-repeat fixed center; 
+ion-content::part(background) { 
+  background: url('../../assets/images/login-bg.svg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    background-color: #fff;
+    background-color: var(--sesi);
 }
 
 ion-img {
   width: 150px !important;
-  height: 150px !important;
-  margin: 130px auto 80px;
+}
+
+.form-content {
+  background-color: #fff;
+  max-width: 90%;
+  margin: auto auto;
+  padding:16px;
+  -webkit-box-shadow: 2px 2px 5px 4px rgba(0,0,0,0.17);
+  -moz-box-shadow: 2px 2px 5px 4px rgba(0,0,0,0.17);
+  box-shadow: 2px 2px 5px 4px rgba(0,0,0,0.17);
+  gap: 48px;
+  margin-top: 50%;
+  align-items: center !important;
+  border-radius: 8px;
 }
 
 .form-content,
@@ -21,40 +33,10 @@ ion-img {
   justify-content: flex-start;
 }
 
-.form-content {
-  padding: 0 24px;
-  gap: 48px;
-}
-
 .input-wrapper,
 .control-buttons {
   width: 100%;
   gap: 8px;
-}
-
-ion-input {
-  position: relative;
-  --background: transparent !important;
-}
-
-ion-input.has-focus,
-ion-input {
-  --highlight-color: var(--sesiescuro);
-}
-
-.input-fill-solid.sc-ion-input-md-h {
-  --padding-start: 0;
-  --border-color: var(--sesiblack);
-}
-
-ion-input ion-icon {
-  position: absolute;
-  right: 0;
-  z-index: 2;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  color: var(--sesiescuro);
 }
 
 ion-button {
@@ -64,8 +46,25 @@ ion-button {
   width: 100%;
 }
 
-ion-nav-link {
-  font-size: 14px;
-  text-decoration: underline;
+ion-label {
   font-weight: 600;
+}
+
+.input-host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.input-host a {
+  position: absolute;
+  z-index: 5;
+  right: 10px;
+  font-size: 24px;
+}
+
+.input-host a ion-icon {
+  color: var(--sesiescuro);
 }

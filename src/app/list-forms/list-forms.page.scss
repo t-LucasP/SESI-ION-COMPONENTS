@@ -1,69 +1,12 @@
-@import "../home/home.page.scss";
-
 div.item-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
 }
 
-ion-card {
-    display: flex;
-    flex-direction: column;
-    padding: 8px 0;
-    width: 100%;
+ion-text {
+  margin-top: 8px;
+  font-weight: 700;
 }
-
-ion-card-title {
-    font-weight: 700;
-}
-
-ion-button.access-form {
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-weight: 600;
-}
-
-ion-button.access-form ion-icon {
-    font-size: 20px;
-}
-
-ion-button[disabled] {
-    --background: var(--sesigrey) !important;
-    --ion-color-base: var(--sesigrey) !important;
-    color: #fff;
-    font-weight: 600 !important;
-    // opacity: 1;
-}
-
-ion-button.status-1 {
-    --background: var(--sesi) !important;
-}
-
-ion-button.status-3 {
-    --background: var(--sesisecmedio) !important;
-}
-
-ion-button.status-4 {
-    --background: var(--sesifbi) !important;
-}
-
-ion-button.status-6 {
-    --background: var(--sesifbw) !important;
-    color: #000;
-}
-
-ion-button.status-7 {
-    --background: var(--sesisecdark) !important;
-}
-
-ion-button.status-8 {
-    --background: var(--sesisec) !important;
-}
-
-
